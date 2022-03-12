@@ -17,11 +17,11 @@
         }
     </style>
 
-    <input type="text" class="input">
-    <input type="text" class="input">
-    <input type="text" class="input">
-    <input type="text" class="input">
-    <input type="text" class="input">
+    <input type="text" class="input" maxlength="1">
+    <input type="text" class="input" maxlength="1">
+    <input type="text" class="input" maxlength="1">
+    <input type="text" class="input" maxlength="1">
+    <input type="text" class="input" maxlength="1">
     <button>제출</button>
 
     <script>
@@ -47,11 +47,11 @@
             
             //제출 버튼 눌렀을 경우 새로운 input 5개 생성
             var template = `<div>
-                                <input type="text" class="input">
-                                <input type="text" class="input">
-                                <input type="text" class="input">
-                                <input type="text" class="input">
-                                <input type="text" class="input">
+                                <input type="text" class="input" maxlength="1">
+                                <input type="text" class="input" maxlength="1">
+                                <input type="text" class="input" maxlength="1">
+                                <input type="text" class="input" maxlength="1">
+                                <input type="text" class="input" maxlength="1">
                             </div>`;
 
             document.querySelector('body').insertAdjacentHTML('beforeend', template);
