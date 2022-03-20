@@ -25,12 +25,14 @@
     <button>제출</button>
 
     <script>
+        //정답 목록
+        const answerList = ['basic', 'clock', 'drink', 'enjoy', 'first', 'green', 'house'];
         //정답
-        const answer = 'basic';
+        const answer = answerList[Math.floor(Math.random()*(answerList.length-1))];
 
         document.querySelector('button').addEventListener('click', () => {
 
-            let input = document.querySelectorAll('input');
+            let input = document.querySelectorAll('.input');
 
             for(let i = 0; i < 5; i++){
                 if(input[i].value == answer[i]){
